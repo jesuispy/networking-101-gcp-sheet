@@ -16,8 +16,8 @@ Download pdf version :
 For more about Google Cloud services check out the [Interactive Google Cloud Developer's Cheat Sheet](https://goo.gle/GCdevelopercheatsheet) 
 
 ----------------------------
-# Content
-<sup>:link: - Link</sup>
+# Contents
+<sup>:link: - Link icon</sup>
 
 ### Global Network I & II
 
@@ -65,7 +65,7 @@ For more about Google Cloud services check out the [Interactive Google Cloud Dev
 * **Data layer (layer 2)**: Focuses of transferring data frames over physical layer. Protocol, ARP, PPP, VLANS. Switches work here.
 * **Physical layer (layer 1)**: Transmission of raw bits over physical mediums. Examples network cables, wireless 
 ----
-* **What is the internet model**: IP address that is routable on the internet  [<sup>:link:</sup>](https://learningnetwork.cisco.com/s/article/osi-model-reference-chart) 
+* **What is the internet model**: A 4 layer model conceptual model of the TCP/IP  stack.   
 * **Application layer**: User interface and application. 
 * **Transport layer**: Responsible for end to end data handling of data streams
 * **Internet layer**: An IP that does not change after being assigned. 
