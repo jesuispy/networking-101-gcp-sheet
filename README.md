@@ -127,3 +127,67 @@ For more about Google Cloud services check out the [Interactive Google Cloud Dev
 * **AS-path prepend**: This is one of several BGP attributes used to influence paths election. This is mandatory. The shorter path should be preferred.[<sup>:link:</sup>](https://datatracker.ietf.org/doc/html/rfc4271#section-5.1.2)  
 * **Multiprotocol label switching (MPLS)**: This is a switching method that uses labels instead of IP information to transmit packets across the backbone core at high speed. 
 * **Bidirectional Forwarding Detection (BFD)**: This is a protocol that detects failure quickly on links when enabled. In GCP you can use this [feature](https://cloud.google.com/network-connectivity/docs/router/concepts/bfd) with Cloud router. 
+
+### Connectivity and Hybrid connectivity
+  
+* **Dedicated Interconnect**: Dedicated connection between Google and your private network. Available from 10 GBit/s to 100 GBit/s. Has High availability configuration and you can use multiple links. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview)
+* **Partner Interconnect**: High available connection between Google and your network provision through a Service provider. Available from 50 MBit/s to 10 GBit/s. Has high availability configuration and you can use multiple links. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-overview)  
+* **Virtual private network (VPN)**: This offers a secure connection between two locations over a secure IPSEC tunnel. 
+* **Cloud VPN**: Google Cloud VPN service. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview)
+* **Carrier Peering**: Google Cloud service that enables you to access Google Workspace and other Google apps via service provider connection.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/carrier-peering)
+* **Direct Peering**: Google Cloud service that enable you to access google Workspace and other Google apps via direct connection to Google edge.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/carrier-peering)
+* **Shared VPC**: GCP service that allow you to provision and connect host projects and subscribe projects. [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/shared-vpc)
+* **VPC Network Peering**: GCP service that allow you to connect between different VPC’s in the same or separate project and organizations. 1-to-1 perring not transitive. Max peering per VPC is 25 connections.  [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/vpc-peering)
+* **Traffic Director**: Google Cloud service that offers a fully managed traffic control plane for service mesh. [<sup>:link:</sup>](https://cloud.google.com/traffic-director/docs/features)
+
+### Network Security
+  
+* **Firewalls**: Allow, deny & filter traffic based on rules. Affect ingress and egress traffic.
+* **Firewall rules**: Criteria used to deny, allow access in GCP e.g. IP, source, tag, service account. [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/firewalls)  
+* **Distributed denial of service (DDoS)**: This is a type of attack that affect availability of service by overloading the systems. [<sup>:link:</sup>](https://en.wikipedia.org/wiki/Denial-of-service_attack) 
+* **Cloud Armor**: Google Cloud service that provides filtering at OSI layer 7 to 4.  [<sup>:link:</sup>](https://cloud.google.com/armor)
+* **VPC Service Controls**: Google Cloud service that allows you the ability to create  perimeters that protect resources and data.  [<sup>:link:</sup>](https://cloud.google.com/vpc-service-controls/docs/overview?hl=en)
+* **Cloud Identity-Aware Proxy (IAP)**: Google Cloud service that controls access to your application  and restrict to only authorized users.  [<sup>:link:</sup>](https://cloud.google.com/iap/docs/concepts-overview)
+* **Security Command Center**: Google Cloud service that has asset discovery, threat detection, and threat prevention components. [<sup>:link:</sup>](https://cloud.google.com/security-command-center/docs/concepts-security-command-center-overview)
+* **Beyond Corp**: Google Cloud [zero trust](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44860.pdf) model.  [<sup>:link:</sup>](https://cloud.google.com/beyondcorp-enterprise/docs/overview)
+
+
+### Traffic handling, Load balancing, Content Delivery
+  
+* **HTTP(S) Load Balancer**:Global load balancer for HTTP(S) traffic. [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/https)
+* **SSL proxy**: Global load balancer for SSL traffic. [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/ssl)  
+* **TCP proxy**: Global load balancer for TCP traffic. [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/tcp) 
+* **Network LB**: Regional LB used to load balance TCP traffic (available internally and externally).  [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/network)
+* **Internal LB**: Regional LB used with a VPC.  [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/internal)
+* **Network Endpoint Group (NEG)**: Network Endpoint Group are used to attach a backend pool to a load balancing service in Google Kubernets Engine (GKE).  [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/negs)
+* **Security Command Center**: Google Cloud service that has asset discovery, threat detection, and threat prevention components. [<sup>:link:</sup>](https://cloud.google.com/security-command-center/docs/concepts-security-command-center-overview)
+* **Beyond Corp**: Google Cloud [zero trust](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44860.pdf) model.  [<sup>:link:</sup>](https://cloud.google.com/beyondcorp-enterprise/docs/overview)
+
+### Troubleshooting & Monitoring
+  
+* **ping**: This tool the availability of host by using Internet Control Message Protocol.
+* **Traceroute or tracert**: Shows the hops between source and destination. 
+* **nslookup**: Allows you to resolve IP from host name. 
+* **Domain information groper (dig)**: Performs DNS lookup and displays the answers of the query.
+* **ipconfig or ifconfig**: Show the IP address, subnet and gateway information of a system.
+* **Flow logs**: This GCP service tells you about the traffic flow in your VPC.  [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/flow-logs)
+* **Network Intelligence Center**: GCP service that provides you with a few tools to gain visibility into your network. [<sup>:link:</sup>](https://cloud.google.com/network-intelligence-center)
+* **Audit Logs**: Google Cloud logs that provide information on activities in your cloud. A few are; Admin Activity, Data Access, system events and Policy denied, audit logs.
+* **Cloud Operations**: Google Cloud tool that allows you to monitor, log and trace application and systems in your environments. [<sup>:link:</sup>](https://cloud.google.com/products/operations)
+* **Packet Mirroring**: Packet Mirroring clones the traffic on the network and forwards it for examination. See more [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/packet-mirroring)
+
+
+### What happens when you type www.google.com in a browser
+
+ - 1 - Open browser type www.google.com  
+- 2 - Browser cache is checked to see if IP information was cached  
+- 3 - If #2 has no infor system check host file for address information
+- 4 - If #3 has no info, system queries local DNS
+- 5 - If #4 has no info query sent to Service provider DNS
+- 6 - If SP has no info send to Root level DNS
+- 7 - Root level return the Top level DNS
+- 8 - Top level DNs return the Authoritative DNS who has the record  
+- 9 - Authoritative DNS returns a DNS response with the IP address and DNS TTL information  
+- 10 - The system now has the IP address and initiates a TCP connection to the server
+- 11 - TCP three-way handshake takes place, TLS Secure authentication process takes place and secure connection is setup.  
+- 12 - HTTP(S)/HTML process begins to return information as required
