@@ -1,6 +1,6 @@
 # The Networking 101 GCP sheet
 
-It's easy to get lost in a converstaion around networking. I hope this referrence sheet can help with that.  
+It's easy to get lost in a conversation around networking. I hope this referrence sheet can help with that.  
 
 This is a quick 101 level reference guide of general networking terms and Google Cloud networking specific services.  
 
@@ -35,7 +35,7 @@ For more about Google Cloud services check out the [Interactive Google Cloud Dev
 ### VPCs and IP addressing
   
 * **Virtual Private Cloud (VPC)**: A VPC is a Logical representation of an on-prem network. This is a global construct in GCP. [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/vpc) 
-* **VPC modes**: These are two modes auto mode and custom mode, available in GCP. [<sup>:link:</sup> Auto mode](https://cloud.google.com/storage/docs/) [<sup>:link:</sup> Custom mode](https://cloud.google.com/storage/docs/)
+* **VPC modes**: These are two modes auto mode and custom mode, available in GCP. [<sup>:link:</sup> Auto mode](https://cloud.google.com/vpc/docs/vpc#subnet-ranges) [<sup>:link:</sup> Custom mode](https://cloud.google.com/vpc/docs/vpc#subnet-ranges)
 * **VPC subnets**: These are regional and assigned to an IP address range. [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/subnets) 
 * **IP address**: A unique address used to identity host on network. Made up of network and host portions. [<sup>:link:</sup>](https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html#anc5) 
 * **Subnet mask**: This segments and IP address into network and host portions.  [<sup>:link:</sup>](https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html#anc13) 
@@ -43,7 +43,7 @@ For more about Google Cloud services check out the [Interactive Google Cloud Dev
 * **IPV6**: This is a 128 bit, hexadecimal address. 2001:DB8:7654:3210:FEDC:BA98:764:3203
 * **Private IP (RFC1918)**: A special range that can be used internally by anyone. These are non internet routable. [<sup>:link:</sup>](https://datatracker.ietf.org/doc/html/rfc1918) 
 * **Public IP**: IP address that is routable on the internet  
-* **DHCP**: Dynamic Host Control protocol. A method to automatically assign an IP address to a client. [<sup>:link:</sup>](https://datatracker.ietf.org/doc/html/rfc1918) 
+* **DHCP**: Dynamic Host Control protocol. A method to automatically assign an IP address to a client. [<sup>:link:</sup>](https://wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) 
 * **Static IP**: An IP that does not change after being assigned. 
 * **Ephemeral IP**: Temporary IP that is not reserved/static.  
 * **Bring Your Own IP (BYOIP)**: Use external IP addresses that you own in Google Cloud  [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/using-bring-your-own-ip)
@@ -123,10 +123,10 @@ For more about Google Cloud services check out the [Interactive Google Cloud Dev
 * **Autonomous System Number (ASN)**: A repository of all the routing information within a network. 
 * **External BGP (eBGP)**: BGP connection formed between different AS’s. 
 * **Internal BGP (iBGP)**: Connection formed within the same AS.
-* **Multiple Exit Discriminator (MED)**: This a one of several BGP attributes used to influence path selection. This is non transitive and the lower metric wins.  [<sup>:link:</sup>](https://datatracker.ietf.org/doc/html/rfc4271#section-5.1.4)  
+* **Multiple Exit Discriminator (MED)**: This is one of several BGP attributes used to influence path selection. This is non transitive and the lower metric wins.  [<sup>:link:</sup>](https://datatracker.ietf.org/doc/html/rfc4271#section-5.1.4)  
 * **AS-path prepend**: This is one of several BGP attributes used to influence path selection. This is a mandatory attribute. The shorter path should be preferred.[<sup>:link:</sup>](https://datatracker.ietf.org/doc/html/rfc4271#section-5.1.2)  
 * **Multiprotocol label switching (MPLS)**: This is a switching method that uses labels instead of IP information to transmit packets across the backbone core at high speed. 
-* **Bidirectional Forwarding Detection (BFD)**: This is a protocol that detects failure quickly on links when enabled. In GCP you can use this [feature](https://cloud.google.com/network-connectivity/docs/router/concepts/bfd) with Cloud router. 
+* **Bidirectional Forwarding Detection (BFD)**: This is a protocol that detects failure quickly on links when enabled. In GCP you can use this [feature](https://cloud.google.com/network-connectivity/docs/router/concepts/bfd) with Cloud Router. 
 
 ### Connectivity and Hybrid connectivity
   
@@ -135,7 +135,7 @@ For more about Google Cloud services check out the [Interactive Google Cloud Dev
 * **Virtual private network (VPN)**: This offers a secure connection between two locations over a secure IPSEC tunnel. 
 * **Cloud VPN**: Google Cloud VPN service. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview)
 * **Carrier Peering**: Google Cloud service that enables you to access Google Workspace and other Google apps via service provider connection.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/carrier-peering)
-* **Direct Peering**: Google Cloud service that enable you to access google Workspace and other Google apps via direct connection to Google edge.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/carrier-peering)
+* **Direct Peering**: Google Cloud service that enable you to access google Workspace and other Google apps via direct connection to Google edge.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/direct-peering)
 * **Shared VPC**: GCP service that allow you to provision and connect host projects, and service projects. [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/shared-vpc)
 * **VPC Network Peering**: GCP service that allow you to connect between different VPC’s in the same or separate project and organizations. This is 1-to-1 peering that is not transitive. Max peering per VPC is 25 connections.  [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/vpc-peering)
 * **Traffic Director**: Google Cloud service that offers a fully managed traffic control plane for service mesh. [<sup>:link:</sup>](https://cloud.google.com/traffic-director/docs/features)
@@ -160,7 +160,7 @@ For more about Google Cloud services check out the [Interactive Google Cloud Dev
 * **Network LB**: Regional LB used to load balance TCP traffic (available internally and externally).  [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/network)
 * **Internal LB**: Regional LB used with a VPC.  [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/internal)
 * **Network Endpoint Group (NEG)**: Network Endpoint Group are used to attach a backend pool to a load balancing service in Google Kubernets Engine (GKE).  [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/negs)
-* **Ingress**: Allows HTTP(S) traffic connections to a kubernetes cluster. [<sup>:link:</sup>](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+* **Ingress**: Allows HTTP(S) traffic connections to a Kubernetes cluster. [<sup>:link:</sup>](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 * **Content Delivery Network (CDN)**: Caches content at a distribution endpoint closest to customer.
 
 * **Cloud CDN**: Google Cloud standard CDN offering.  [<sup>:link:</sup>](https://cloud.google.com/cdn/docs/overview)
