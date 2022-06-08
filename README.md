@@ -6,7 +6,7 @@ This is a quick 101 level reference guide of general networking terms and Google
 
 By the Developer Relations Engineer Ammett Williams of the Google Developer Relations Team.  
 
-[<img border="0" valign="middle" src="img/net101.gif" />](pdf/network101gcp.pdf)  
+[![**Preview**](img/net101.gif)](pdf/network101gcp.pdf) 
 
 ## Download [pdf](pdf/) version : 
 
