@@ -10,15 +10,16 @@ By the Developer Relations Engineer Ammett Williams of the Google Developer Rela
 
 ## Download [pdf](pdf/) version : 
 
-[**PDF**](pdf/network101gcp.pdf)
+[**Get PDF**](pdf/network101gcp.pdf)  
+Active links are in the pdf document
 
 ## More about Google Cloud services 
 
-Check out the [Interactive Google Cloud Developer's Cheat Sheet](https://goo.gle/GCdevelopercheatsheet) 
+Check out the [**Interactive Google Cloud Developer's Cheat Sheet**](https://goo.gle/GCdevelopercheatsheet) 
 
 ## Feedback
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/ammett/) or Twitter [@ammettw](https://twitter.com/ammettw)
+Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) or Twitter [**@ammettw**](https://twitter.com/ammettw)
 
 ----------------------------
 # Contents
