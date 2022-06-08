@@ -6,13 +6,19 @@ This is a quick 101 level reference guide of general networking terms and Google
 
 By the Developer Relations Engineer Ammett Williams of the Google Developer Relations Team.  
 
-[<img border="0" valign="middle" src="img/net101.gif">](pdf/)  
+[<img border="0" valign="middle" src="img/net101.gif" />](pdf/network101gcp.pdf)  
 
-## Download [pdf](pdf/) version : (pdf/network101gcp.pdf)
+## Download [pdf](pdf/) version : 
 
 [**PDF**](pdf/network101gcp.pdf)
 
-For more about Google Cloud services check out the [Interactive Google Cloud Developer's Cheat Sheet](https://goo.gle/GCdevelopercheatsheet) 
+## More about Google Cloud services 
+
+Check out the [Interactive Google Cloud Developer's Cheat Sheet](https://goo.gle/GCdevelopercheatsheet) 
+
+## Feedback
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/ammett/) or Twitter [@ammettw](https://twitter.com/ammettw)
 
 ----------------------------
 # Contents
