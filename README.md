@@ -181,6 +181,7 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) or Twitte
 * **nslookup**: Allows you to resolve IP from host name. 
 * **Domain information groper (dig)**: Performs DNS lookup and displays the answers of the query.
 * **ipconfig or ifconfig**: Show the IP address, subnet and gateway information of a system.
+* **tcpdump and/or wireshark**: tcpdump is a powerful command-line low level packet capture and analyzer tool. Wireshark is the widely-used visual network protocol analyzer.
 * **Flow logs**: This GCP service tells you about the traffic flow in your VPC.  [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/flow-logs)
 * **Network Intelligence Center**: GCP service that provides you with a few tools to gain visibility into your network. [<sup>:link:</sup>](https://cloud.google.com/network-intelligence-center)
 * **Audit Logs**: Google Cloud logs that provide information on activities in your cloud. A few are; Admin Activity, Data Access, system events and Policy denied, audit logs. [<sup>:link:</sup>](https://cloud.google.com/logging/docs/audit)
