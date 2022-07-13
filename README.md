@@ -58,6 +58,7 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) or Twitte
 * **Secondary IP**: Secondary range of IP address that can be assigned to your VM in GCP. 
 * **Restricted.googleapis.com IP**: Used to access external GCP APIs via google private network. 199.36.153.4/30. Used when VPC service controls are enabled and you need to access only VPC service control supported APIs. [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/configure-private-google-access) 
 * **Private.googleapis.com IP**: Used to access external GCP APIs via google private network. 199.36.153.8/30 [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/configure-private-google-access) 
+* **Network Time Protocol (NTP)**:  Is used to synchronize systems timer across a network. This is used on both internal and external networks. [<sup>:link:</sup>](https://developers.google.com/time) 
     
 ### OSI model and Internet model
   
@@ -181,7 +182,7 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) or Twitte
 * **nslookup**: Allows you to resolve IP from host name. 
 * **Domain information groper (dig)**: Performs DNS lookup and displays the answers of the query.
 * **ipconfig or ifconfig**: Show the IP address, subnet and gateway information of a system.
-* **tcpdump and/or wireshark**: tcpdump is a powerful command-line low level packet capture and analyzer tool. Wireshark is the widely-used visual network protocol analyzer.
+* **tcpdump and/or wireshark**: [tcpdump](https://www.tcpdump.org/) is a powerful command-line low level packet capture and analyzer tool. [Wireshark](https://www.wireshark.org/docs/) is the widely-used visual network protocol analyzer.
 * **Flow logs**: This GCP service tells you about the traffic flow in your VPC.  [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/flow-logs)
 * **Network Intelligence Center**: GCP service that provides you with a few tools to gain visibility into your network. [<sup>:link:</sup>](https://cloud.google.com/network-intelligence-center)
 * **Audit Logs**: Google Cloud logs that provide information on activities in your cloud. A few are; Admin Activity, Data Access, system events and Policy denied, audit logs. [<sup>:link:</sup>](https://cloud.google.com/logging/docs/audit)
