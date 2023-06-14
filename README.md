@@ -6,7 +6,7 @@ This is a quick 101 level reference guide of general networking terms and Google
 
 By the Developer Relations Engineer Ammett Williams of the Google Developer Relations Team.  
 
-<img border="0" valign="middle" src="img/net101.gif"/>  
+<img border="0" valign="middle" src="img/net101v2.gif"/>  
 
 ## Download [pdf](pdf/) version : 
 
@@ -19,7 +19,7 @@ Check out the [**Interactive Google Cloud Developer's Cheat Sheet**](https://goo
 
 ## Feedback
 
-Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) or Twitter [**@ammettw**](https://twitter.com/ammettw)
+Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) 
 
 ----------------------------
 # Contents
@@ -136,10 +136,25 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) or Twitte
 * **Multiprotocol label switching (MPLS)**: This is a switching method that uses labels instead of IP information to transmit packets across the backbone core at high speed. 
 * **Bidirectional Forwarding Detection (BFD)**: This is a protocol that detects failure quickly on links when enabled. In GCP you can use this [feature](https://cloud.google.com/network-connectivity/docs/router/concepts/bfd) with Cloud Router. 
 
+### Data Center Networking
+  
+* **Optical switch circuit**: Maps optical input to output ports to form a connection. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview)
+* **Wave division multiplexing**: WDM technology allows you to combine multiple optical signal onto a single optical fiber. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-overview)  
+* **Clos topology**: A non blocking, multistage switching network, used in  data center switching fabrics. 
+* **Merchant switch silicon**: Chip made by 3Ps that are sold to any consumers to design a product based on it. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview)
+* **Data Center fabric**: This is a Data Center design comprised of leaf and spine switches that allows low latency and scalable data center operations.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/carrier-peering)
+* **Top of Rack switches**: These switch are placed in the same rack as other equipment to connect all equipment in the rack and to connect to other TOR switches in the Data Center.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/direct-peering)
+* **OpenFlow**: OpenFlow is a communications protocol that allows network controllers to directly program the network forwarding plane. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-overview)  
+* **Leaf and Spine**: A two layer full mesh topology. Has leaf switches and spine switches. 
+* **East West traffic**: Communication traffic flow between devices in a data center. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview)
+* **North South traffic**: In and out communication traffic flow between data center and outside networks.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/carrier-peering)
+* **Colocation**: 3P Data Center facilities where multiple tenants can house their data center equipment.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/direct-peering)
+
 ### Connectivity and Hybrid connectivity
   
 * **Dedicated Interconnect**: Dedicated connection between Google and your private network. Available from 10 GBit/s to 100 GBit/s. Has high availability configuration and you can use multiple links. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview)
 * **Partner Interconnect**: Highly available connection between Google and your network provisioned through a Service Provider. Available from 50 MBit/s to 10 GBit/s. Has high availability configuration and you can use multiple links. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-overview)  
+* **Cross-Cloud Interconnect**: A new service that offers a dedicated connection between Google and your other Cloud provider network. Available from 10 Gbps to 100 Gbps. Has high availability configurations and you can use multiple links. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/cci-overview)
 * **Virtual private network (VPN)**: This offers a secure connection between two locations over a secure IPSEC tunnel. 
 * **Cloud VPN**: Google Cloud VPN service. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview)
 * **Carrier Peering**: Google Cloud service that enables you to access Google Workspace and other Google apps via service provider connection.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/carrier-peering)
@@ -172,6 +187,7 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) or Twitte
 * **Content Delivery Network (CDN)**: Caches content at a distribution endpoint closest to customer.
 
 * **Cloud CDN**: Google Cloud standard CDN offering.  [<sup>:link:</sup>](https://cloud.google.com/cdn/docs/overview)
+* **Media CDN**: Google Cloud media delivery solution. Can handle high throughput media like streaming..  [<sup>:link:</sup>](https://cloud.google.com/media-cdn/docs/overview)
 * **Hyper Text Transfer Protocol (HTTP)**: Protocol used for transmitting hypermedia documents. This is a standard on the internet, more commonly in it secure form HTTP(S).  [<sup>:link:</sup>](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 * **HTTPS**: Secure version of HTTP enabled by using TLS on the connection. [<sup>:link:</sup>](https://en.wikipedia.org/wiki/HTTPS)
 
@@ -179,6 +195,7 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) or Twitte
   
 * **ping**: This tool checks the availability of host by using Internet Control Message Protocol.
 * **Traceroute or tracert**: Shows the hops between source and destination. 
+* **My Traceroute (MTR)**: An  application that combines the functions of the traceroute and ping programs in one network diagnostic tool. [<sup>:link:</sup>](https://en.wikipedia.org/wiki/MTR_(software))
 * **nslookup**: Allows you to resolve IP from host name. 
 * **Domain information groper (dig)**: Performs DNS lookup and displays the answers of the query.
 * **ipconfig or ifconfig**: Show the IP address, subnet and gateway information of a system.
