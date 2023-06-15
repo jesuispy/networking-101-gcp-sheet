@@ -138,17 +138,17 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/)
 
 ### Data Center Networking
   
-* **Optical switch circuit**: Maps optical input to output ports to form a connection. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview)
-* **Wave division multiplexing**: WDM technology allows you to combine multiple optical signal onto a single optical fiber. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-overview)  
+* **Optical switch circuit**: Maps optical input to output ports to form a connection. 
+* **Wave division multiplexing**: WDM technology allows you to combine multiple optical signal onto a single optical fiber. 
 * **Clos topology**: A non blocking, multistage switching network, used in  data center switching fabrics. 
-* **Merchant switch silicon**: Chip made by 3Ps that are sold to any consumers to design a product based on it. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview)
-* **Data Center fabric**: This is a Data Center design comprised of leaf and spine switches that allows low latency and scalable data center operations.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/carrier-peering)
-* **Top of Rack switches**: These switch are placed in the same rack as other equipment to connect all equipment in the rack and to connect to other TOR switches in the Data Center.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/direct-peering)
-* **OpenFlow**: OpenFlow is a communications protocol that allows network controllers to directly program the network forwarding plane. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-overview)  
+* **Merchant switch silicon**: Chip made by 3Ps that are sold to any consumers to design a product based on it. 
+* **Data Center fabric**: This is a Data Center design comprised of leaf and spine switches that allows low latency and scalable data center operations.  
+* **Top of Rack switches**: These switch are placed in the same rack as other equipment to connect all equipment in the rack and to connect to other TOR switches in the Data Center. 
+* **OpenFlow**: OpenFlow is a communications protocol that allows network controllers to directly program the network forwarding plane.  
 * **Leaf and Spine**: A two layer full mesh topology. Has leaf switches and spine switches. 
-* **East West traffic**: Communication traffic flow between devices in a data center. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview)
-* **North South traffic**: In and out communication traffic flow between data center and outside networks.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/carrier-peering)
-* **Colocation**: 3P Data Center facilities where multiple tenants can house their data center equipment.  [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/direct-peering)
+* **East West traffic**: Communication traffic flow between devices in a data center. 
+* **North South traffic**: In and out communication traffic flow between data center and outside networks.  
+* **Colocation**: 3P Data Center facilities where multiple tenants can house their data center equipment.  
 
 ### Connectivity and Hybrid connectivity
   
@@ -173,6 +173,7 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/)
 * **Cloud Identity-Aware Proxy (IAP)**: Google Cloud service that controls access to your application  and restricts it to only authorized users.  [<sup>:link:</sup>](https://cloud.google.com/iap/docs/concepts-overview)
 * **Security Command Center**: Google Cloud service that has asset discovery, threat detection, and threat prevention components. [<sup>:link:</sup>](https://cloud.google.com/security-command-center/docs/concepts-security-command-center-overview)
 * **Beyond Corp**: Google Cloud [zero trust](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44860.pdf) model.  [<sup>:link:</sup>](https://cloud.google.com/beyondcorp-enterprise/docs/overview)
+* **Cloud IDS**: Google Cloud’s Intrusion Detection System. Detect and logs potential threats. [<sup>:link:</sup>](https://cloud.google.com/intrusion-detection-system/docs/overview)
 
 
 ### Traffic handling, Load balancing, Content Delivery
@@ -186,9 +187,9 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/)
 * **Ingress**: Allows HTTP(S) traffic connections to a Kubernetes cluster. [<sup>:link:</sup>](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 * **Content Delivery Network (CDN)**: Caches content at a distribution endpoint closest to customer.
 
-* **Cloud CDN**: Google Cloud standard CDN offering.  [<sup>:link:</sup>](https://cloud.google.com/cdn/docs/overview)
-* **Media CDN**: Google Cloud media delivery solution. Can handle high throughput media like streaming..  [<sup>:link:</sup>](https://cloud.google.com/media-cdn/docs/overview)
-* **Hyper Text Transfer Protocol (HTTP)**: Protocol used for transmitting hypermedia documents. This is a standard on the internet, more commonly in it secure form HTTP(S).  [<sup>:link:</sup>](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+* **Cloud CDN**: Google Cloud's standard web acceleration CDN offering.  [<sup>:link:</sup>](https://cloud.google.com/cdn/docs/overview)
+* **Media CDN**: Google Cloud's media delivery solution. Can handle high throughput media like streaming..  [<sup>:link:</sup>](https://cloud.google.com/media-cdn/docs/overview)
+* **Hypertext Transfer Protocol (HTTP)**: Protocol used for transmitting hypermedia documents. This is a standard on the internet, more commonly in it secure form HTTP(S).  [<sup>:link:</sup>](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 * **HTTPS**: Secure version of HTTP enabled by using TLS on the connection. [<sup>:link:</sup>](https://en.wikipedia.org/wiki/HTTPS)
 
 ### Troubleshooting & Monitoring
