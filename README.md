@@ -1,6 +1,6 @@
-# The Networking 101 GCP sheet
+# The Networking 101 Google Cloud sheet
 
-It's easy to get lost in a conversation around networking. I hope this referrence sheet can help with that.  
+It's easy to get lost in a conversation around networking. I hope this (v2) reference sheet can help with that.  
 
 This is a quick 101 level reference guide of general networking terms and Google Cloud networking specific services.  
 
@@ -8,10 +8,10 @@ By the Developer Relations Engineer Ammett Williams of the Google Developer Rela
 
 <img border="0" valign="middle" src="img/net101v2.gif"/>  
 
-## Download [pdf](pdf/) version : 
+## Download current [pdf](pdf/) version : 
 
 [**Get PDF**](pdf/network101gcp.pdf)  
-Active links are in the pdf document
+Active links are in the pdf document.
 
 ## More about Google Cloud services 
 
