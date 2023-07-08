@@ -212,7 +212,7 @@ Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/)
 ### What happens when you type www.google.com in a browser
 
  - 1 - Open browser type www.google.com  
-- 2 - Browser cache is checked to see if IP information was cached  
+- 2 - System DNS cache is checked to see if IP information was cached  
 - 3 - If #2 has no info, system checks host file for address information
 - 4 - If #3 has no info, system queries local DNS
 - 5 - If #4 has no info, query is sent to Service Provider (SP) DNS
