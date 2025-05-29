@@ -1,30 +1,34 @@
-# The Networking 101 Google Cloud sheet
+<h1 align="center"> The Networking 101 Google Cloud sheet
+</h1>
 
-It's the age of AI and it's still easy to get lost in a conversation around networking. Well this (v3) reference sheet **(updated in 2025)** can help with that.  
+It's the age of AI and it's still easy to get lost in a conversation around networking. Well this (v3) reference sheet **(updated in 2025)** can help with that.   
 
-**Added to this version is a section on networking for AI so you can learn about(RDMA, InfiniBand, RoCE, NVLink, GPU, TPU, etc)**
-
+ **💡Added to this version is a section on networking for AI so you can learn about(RDMA, InfiniBand, RoCE, NVLink, GPU, TPU, etc)💡**  
+ 
 This is a quick 101 level reference guide of general networking terms with and added Google Cloud networking twist.  
 
-By the Developer Relations Engineer Ammett Williams of the Google Developer Relations Team.  
+*By the Developer Relations Engineer Ammett Williams of the Google Developer Relations Team.*  
 
 <img border="0" valign="middle" src="img/net101v3.gif"/>  
 
 ## Download current [pdf](pdf/) version : 
 
-➡️ ➡️ [**Get PDF**](pdf/network101gcp.pdf)  
-All active links are in the pdf document.  
+All active links are in the PDF document.
+<p align="center">
+  <a href="pdf/network101gcp.pdf">
+    <img src="https://img.shields.io/badge/Get_PDF-Download-blue?style=for-the-badge&logo=adobeacrobatreader" alt="Download PDF">
+  </a>
+</p> 
 
 ## Feedback
 
-Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="20" height="20" style="margin-left: 8px;">
-</a>
+Connect with me on <a href="https://www.linkedin.com/in/ammettwilliams/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="20" height="20" style="margin-left: 8px;"></a>
 
 ----------------------------
 # Contents
 <sup>:link: - Link icon</sup>
 
-### Global Network 
+### 🌐 Global Network
 
 
 * **Network**: Is a collection of connected devices for the purpose of communication. This can be a physical or logical connection. 
@@ -42,7 +46,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Multi-shard isolation**: Each network shard has independent data, control, and management planes[<sup>:link:</sup>](https://www.youtube.com/watch?v=2tSq7UP2N3E) 
 
 
-### VPCs and IP addressing
+### 💻 VPCs and IP addressing
   
 * **Virtual Private Cloud (VPC)**: A VPC is a Logical representation of an on-prem network. This is a global construct in GCP. [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/vpc) 
 * **VPC modes**: These are two modes auto mode and custom mode, available in GCP. [<sup>:link:</sup> Auto mode](https://cloud.google.com/vpc/docs/vpc#subnet-ranges) [<sup>:link:</sup> Custom mode](https://cloud.google.com/vpc/docs/vpc#subnet-ranges)
@@ -63,7 +67,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Private.googleapis.com IP**: Used to access external GCP APIs via google private network. 199.36.153.8/30 [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/configure-private-google-access) 
 * **Network Time Protocol (NTP)**:  Is used to synchronize systems timer across a network. This is used on both internal and external networks. [<sup>:link:</sup>](https://developers.google.com/time) 
     
-### OSI model and Internet model
+### 📊 OSI model and Internet model
   
 * **What is the OSI model**: A 7 layer conceptual model that provides interoperability of the TCP stack. [<sup>:link:</sup>](https://learningnetwork.cisco.com/s/article/osi-model-reference-chart) 
 * **Application layer (layer 7)**: User interface and application. Protocols examples HTTP, HTML
@@ -73,23 +77,22 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Network layer (layer 3)**: Focuses on subnets, route path selection. Protocols examples IP, ICMP,. Router work here.
 * **Data layer (layer 2)**: Focuses of transferring data frames over physical layer. Protocol, ARP, PPP, VLANS. Switches work here.
 * **Physical layer (layer 1)**: Transmission of raw bits over physical mediums. Examples network cables, wireless. 
-----
+***
 * **What is the internet model**: A 4 layer model conceptual model of the TCP/IP  stack.   
 * **Application layer**: User interface and application. 
 * **Transport layer**: Responsible for end to end data handling of data streams
 * **Internet layer**: Responsible for routing packets through networks.  
 * **Link layer**: From a device it interacts with physical network. 
 
-----
-* **Google Cloud Services operating at different OSI layers** ⬇️ ⬇️
----
-* **Layer 7**: A 4 layer model conceptual model of the TCP/IP  stack.   
-* **Layer 4**: Network Load balancers. 
-* **Layer 3**: Cloud Interconnect.
-* **Layer 2**: Cross-Site Interconnect, VLAN.  
+***
+> **Google Cloud Services operating at different OSI layers** ⬇️ ⬇️
+> * **Layer 7**: A 4 layer model conceptual model of the TCP/IP  stack.   
+> * **Layer 4**: Network Load balancers. 
+> * **Layer 3**: Cloud Interconnect.
+> * **Layer 2**: Cross-Site Interconnect, VLAN.  
 
 
-### TCP, TCP three-way handshake, UDP, QUIC
+### 🤝 TCP, TCP three-way handshake, UDP, QUIC
   
 * **Transmission Control Protocol (TCP)**: This is a connection oriented protocol that handles reliability, flow and congestion control of packets. It establishes a connection before sending a packet. [<sup>:link:</sup>](https://datatracker.ietf.org/doc/html/rfc793) 
 * **Transmission Control Block**: Contains all the information about the connection and implements the sliding window.
@@ -105,7 +108,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Hypertext Transfer Protocol (HTTP)**: Protocol used for transmitting hypermedia documents. This is a standard on the internet, more commonly in it secure form HTTP(S).  [<sup>:link:</sup>](https://developer.mozilla.org/en-US/docs/Web/HTTP)  
 * **HTTPS**: Secure version of HTTP enabled by using TLS on the connection. [<sup>:link:</sup>](https://en.wikipedia.org/wiki/HTTPS)
 
-### Packet, Frame, MTU
+### 📦 Packet, Frame, MTU
   
 * **Data messages types**: These are frames, packets, datagrams. They may exist at different layers of the OSI model.
 * **Maximum transfer unit (MTU)**: The size of the largest unit of data that can be transmitted over the network.
@@ -115,7 +118,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Broadcast message**: These are sent to every device on a network.  
  
 
-### ARP, RARP, DNS & NAT
+### 🗺️ ARP, RARP, DNS & NAT
   
 * **Domain Name Service (DNS)**: Resolves names to IP addresses.
 * **Cloud DNS**: Google Cloud managed DNS offering. [<sup>:link:</sup>](https://cloud.google.com/dns/docs/overview/) 
@@ -129,7 +132,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Cloud NAT**: Google Cloud managed NAT service. Also supports [private NAT](https://cloud.google.com/nat/docs/private-nat)
  [<sup>:link:</sup>](https://cloud.google.com/nat/docs/overview)  
 
-### Routing, Cloud Router, Dynamic Routing, BGP, MPLS
+### 🌎 Routing, Cloud Router, Dynamic Routing, BGP, MPLS
   
 * **Routing**: Selecting a path for traffic to flow within internal networks or between different networks.
 * **Router**: Allows communication between different networks.  
@@ -151,7 +154,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Multiprotocol label switching (MPLS)**: This is a switching method that uses labels instead of IP information to transmit packets across the backbone core at high speed. 
 * **Bidirectional Forwarding Detection (BFD)**: This is a protocol that detects failure quickly on links when enabled. In GCP you can use this [feature](https://cloud.google.com/network-connectivity/docs/router/concepts/bfd) with Cloud Router. 
 
-### Networking for AI
+### ⚡ Networking for AI
   
 * **Remote Direct Memory Access (RDMA)**: Enables remote direct memory access between devices, bypassing host CPU. [<sup>:link:</sup>](https://www.naddod.com/blog/easily-understand-rdma-technology?srsltid=AfmBOoozIv4Z5p0v_k1Y1d2O2lAuzU0rnQCeserkQ0KHjMee00NRppJW) 
 * **InfiniBand**: High-speed, low-latency fabric for RDMA and cluster communication. [<sup>:link:</sup>](https://network.nvidia.com/pdf/whitepapers/IB_Intro_WP_190.pdf)
@@ -167,7 +170,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Rail Optimized**: Network using dedicated paths ("rails") to maximize RDMA performance with high bandwidth, low latency. [<sup>:link:</sup>](https://www.juniper.net/documentation/us/en/software/jvd/jvd-ai-dc-apstra-nvidia-weka/solution_architecture.html#Toc171952249__what_is_rail_optimized) 
 * **Ultra Ethernet**: Ultra Ethernet is a new standard being developed by the [Ultra Ethernet Consortium (UEC)](https://ultraethernet.org/) for the demanding needs of AI and HPC networking.  
 
-### Data Center Networking
+### 🏢 Data Center Networking
   
 * **Optical switch circuit**: Maps optical input to output ports to form a connection. 
 * **Wave division multiplexing**: WDM technology allows you to combine multiple optical signal onto a single optical fiber. 
@@ -181,7 +184,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **North South traffic**: In and out communication traffic flow between data center and outside networks.  
 * **Colocation**: 3P Data Center facilities where multiple tenants can house their data center equipment.  
 
-### Connectivity and Hybrid connectivity
+### 🔌 Connectivity and Hybrid connectivity
   
 * **Dedicated Interconnect**: Dedicated connection between Google and your private network. Available from 10 GBit/s to 100 GBit/s. Has high availability configuration and you can use multiple links. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview)
 * **Partner Interconnect**: Highly available connection between Google and your network provisioned through a Service Provider. Available from 50 MBit/s to 10 GBit/s. Has high availability configuration and you can use multiple links. [<sup>:link:</sup>](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-overview)  
@@ -197,7 +200,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **VPC Network Peering**: GCP service that allow you to connect between different VPC’s in the same or separate project and organizations. This is 1-to-1 peering that is not transitive. Max peering per VPC is 25 connections.  [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/vpc-peering)
 * **Cloud Service Mesh**: Google Cloud service that offers a fully managed traffic control plane for service mesh. [<sup>:link:</sup>](https://cloud.google.com/service-mesh/docs/overview)
 
-### Network Security
+### 🛡️ Network Security
   
 * **Firewalls**: Allow, deny & filter traffic based on rules. Affect ingress and egress traffic.
 * **Firewall rules**: Criteria used to deny, allow access in GCP e.g. IP, source, tag, service account. [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/firewalls)  
@@ -212,7 +215,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Secure Access Service Edge (SASE)**: A cloud-native framework that converges networking and security functions.
 * **Network Security Integration**: Google Cloud offering to seamlessly integrate third-party security appliances with your network. [<sup>:link:</sup>](https://cloud.google.com/network-security-integration/docs/nsi-overview)
 
-### Traffic handling, Load balancing, Content Delivery
+### 🚦 Traffic handling, Load balancing, Content Delivery
   
 * **Load Balancer**: A load balancer is a device or software application that acts as a traffic director, distributing incoming network traffic across multiple servers.
 * **Application Load Balancer**: These support Layer 7 HTTP/HTTP(S) traffic. [<sup>:link:</sup>](https://cloud.google.com/load-balancing/docs/load-balancing-overview#application-lb) 
@@ -227,7 +230,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Media CDN**: Google Cloud's media delivery solution. Can handle high throughput media like streaming..  [<sup>:link:</sup>](https://cloud.google.com/media-cdn/docs/overview)
 
 
-### Troubleshooting & Monitoring
+### 🛠️ Troubleshooting & Monitoring
   
 * **ping**: This tool checks the availability of host by using Internet Control Message Protocol.
 * **Traceroute or tracert**: Shows the hops between source and destination.  
@@ -238,7 +241,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **My Traceroute (MTR)**: An  application that combines the functions of the traceroute and ping programs in one network diagnostic tool. [<sup>:link:</sup>](https://en.wikipedia.org/wiki/MTR_(software))
 * **tcpdump k**: [tcpdump](https://www.tcpdump.org/) is a powerful command-line low level packet capture and analyzer tool. 
 * **Wireshark**: [Wireshark](https://www.wireshark.org/docs/) is the widely-used visual network protocol analyzer.
-* **lsof**: LiSt Open Files[lsof](https://lsof.readthedocs.io/en/latest/) is a powerful utility used in Unix-like systems to identify and display information about files that are currently opened by processes.
+* **lsof**: LiSt Open Files [lsof](https://lsof.readthedocs.io/en/latest/) is a powerful utility used in Unix-like systems to identify and display information about files that are currently opened by processes.
 * **Flow logs**: This GCP service tells you about the traffic flow in your VPC.  [<sup>:link:</sup>](https://cloud.google.com/vpc/docs/flow-logs)
 * **Network Intelligence Center**: GCP service that provides you with a few tools to gain visibility into your network. [<sup>:link:</sup>](https://cloud.google.com/network-intelligence-center)
 * **Audit Logs**: Google Cloud logs that provide information on activities in your cloud. A few are; Admin Activity, Data Access, system events and Policy denied, audit logs. [<sup>:link:</sup>](https://cloud.google.com/logging/docs/audit)
@@ -247,7 +250,7 @@ Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/
 * **Service Directory**: A Google Cloud managed service that gives you a single place to publish, discover, and connect services. See more [<sup>:link:</sup>](https://cloud.google.com/service-directory/docs/overview)
 
 
-### What happens when you type www.google.com in a browser
+### 🤔 What happens when you type www.google.com in a browser
 
 - 1 - Open browser type www.google.com  
 - 2 - Browser cache is checked to see if IP information was cached  
