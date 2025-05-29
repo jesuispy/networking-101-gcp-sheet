@@ -17,7 +17,8 @@ All active links are in the pdf document.
 
 ## Feedback
 
-Connect with me on [**LinkedIn**](https://www.linkedin.com/in/ammett/) 
+Connect with me on <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="20" height="20" style="margin-left: 8px;">
+</a>
 
 ----------------------------
 # Contents
