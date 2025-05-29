@@ -1,6 +1,6 @@
 # The Networking 101 Google Cloud sheet
 
-It's the age of AI and it's still easy to get lost in a conversation around networking. Well this (v3) reference sheet (created in 2025) can help with that.  
+It's the age of AI and it's still easy to get lost in a conversation around networking. Well this (v3) reference sheet **(updated in 2025)** can help with that.  
 
 **Added to this version is a section on networking for AI so you can learn about(RDMA, InfiniBand, RoCE, NVLink, GPU, TPU, etc)**
 
